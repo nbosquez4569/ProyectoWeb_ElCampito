@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios - ElCampito</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="main">
+        <main class="contenedor">
+            <header class="encabezado">
+                <h2>Registro de Usuarios</h2>
+                <p>Complete la información del nuevo cliente</p>
+            </header>
+
+            <!-- El formulario no envía datos a PHP, lo controla app.js -->
+            <form id="formulario-usuarios" novalidate>
+                <div class="campo">
+                    <label for="identificacion">Identificación (Cédula)</label>
+                    <input type="text" id="identificacion" name="identificacion" placeholder="Ej. 1312345678" aria-required="true">
+                </div>
+
+                <div class="fila">
+                    <div class="campo">
+                        <label for="nombres">Nombres completos</label>
+                        <input type="text" id="nombres" name="nombres" placeholder="Ingrese nombres" aria-required="true">
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese apellidos" aria-required="true">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" aria-required="true">
+                </div>
+
+                <div id="contenedor-mensajes" aria-live="polite"></div>
+
+                <button type="submit" class="registrar">Guardar Usuario</button>
+            </form>
+
+            <a href="index.html" class="volver">← Volver al menú principal</a>
+        </main>
+    </div>
+
+    <!-- Script de validación DOM -->
+    <script src="app.js"></script>
+</body>
+
+</html>

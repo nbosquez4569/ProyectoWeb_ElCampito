@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Horarios - ElCampito</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="main">
+        <main class="contenedor contenedor-listado">
+            <header class="encabezado">
+                <h2>Consulta de Disponibilidad</h2>
+                <p>Horarios para la Cancha "La Pulga"</p>
+            </header>
+
+            <section class="resultado-horarios">
+                <div class="tabla-contenedor" tabindex="0" aria-label="Tabla de horarios desplazable">
+                    <table class="tabla-horarios">
+                        <caption>Horarios disponibles para el día de hoy</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Hora Inicio</th>
+                                <th scope="col">Hora Fin</th>
+                                <th scope="col">Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>18:00</td>
+                                <td>19:00</td>
+                                <td><span class="reservado">Reservado</span></td>
+                            </tr>
+                            <tr>
+                                <td>19:00</td>
+                                <td>20:00</td>
+                                <td><span class="disponible">Disponible</span></td>
+                            </tr>
+                            <tr>
+                                <td>20:00</td>
+                                <td>21:00</td>
+                                <td><span class="disponible">Disponible</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <a href="index.html" class="volver">← Volver al menú principal</a>
+        </main>
+    </div>
+</body>
+
+</html>
